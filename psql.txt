@@ -1,0 +1,22 @@
+Quem criou? QUando foi criado ?
+Teve a sua origem em um projeto chamado de POSTGRES na Universidade Berkeley,nAaCalifornia, em 1986,. 
+Uma equipe Orienteda pelo progessor Michael Stonebraker foi designada para criar o modelo e as regras de um novo sistema de armazenamento de dads com o apoio de diversos órgaos, entre eles o ARmy Resarch oFFice(aro) e o National Schema Foundation(NSf) 
+  A primeira versão de demonstração do projeto ficou pronta em 1987, e logo em seguida foi apresentada em diversos meios. Em 1989, a primeira versão estável foi lançada, com sucessivos lançamentos anuais de novas versões com diversas correcções de bugs. Em meados de 1991, seu código foi adquirido pela empresa ILLUSTRA INFORMATION TECHNOLOGIES, a qual se fundiu com a infromix, hoje pertence a IBM, A empresa informix era propriedade do Porfessor Michael Stonebraker, orientador do projeto POSTGRES e que foi comrpada por US$ 1 Bilhão pela IBM em 2001.
+	A primeira grande mudança no projeto POSTGRES ocorreu em 1994. Devido a crescente popularidade que a ferramenta estava adquirindo, o projeto foi encerrado, dando origem ao programa Postgres95, que trouxe uma grande vantagem em sua primeira versão, a incorporação da linguagem SQL, pelos desenvolvedores Andrew Yue JOlly Chen, subistituindo a linguagem PostQUEL. E o programa na época foi totalmetente contabilizado com o padrão ANSI C, tornando-se portável apra mais de uma plataforma, entre outras diversas melhorias.
+	No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado. Novamente a ferramenta foi mudada, destavez para o nome que conhecemos hoje POStgreSQL. Atualmente, o SGBD encontra-se na versão $$ estável, contendo todas as principais caracteristicas que um sgbd pode disponibilizar
+
+
+POr que foi criado?
+
+QUem utiliza ?
+
+Vantagens e Desvantagens 
+
+Tipos de licensa valor
+o PostgreSQL não utiliza a licença GNU.
+Utiliza a licença BSD(berkeley Software Distribution).
+A licença BSD possui inumeras restrições a menos que as impostas pela licença GNU. TOrnando-se o código muito mais acessível para diversos tipos de utilizações, incluindo a livre utilização da ferramenta até mesmo para fins comerciais.
+
+Curiosidades 
+O postgreSQl não tem limite de tamanho para seus banco de dados, sendo a única limitação para tal critério o hardware disponivel pelo computador em que o PostgreSQL está armazenando as suas informações. Sua limitação dá-se em nível de tabela, com um limite máximo de 32TB por tabela. Além do mais, é possível ter registros(linhas) com até 1.6TB, campos com até 1GB, tabelas com até 1600 campos e indices ilimitados para aceleração da busca dos resultados.
+A estabilidade também é um de seus recursos mais interessantes, pois foi projetado para executar no método 24/7(24 horas por dia, sete dias na semana)
