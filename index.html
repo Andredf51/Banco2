@@ -1,30 +1,38 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-    <title>Olá, mundo!</title>
+    <title>PostgreSQL</title>
 
 
     <style type="text/css">
-        #roda{
+        #roda {
             border: 1px solid #000;
             min-height: 100px;
-            background-color: aqua
+            background-color: #336791;
+            /* cor do postgreesql */
         }
-        #imagemteste{
+
+        #imagemteste {
             width: 600px;
             height: 400px;
         }
-    </style> 
 
-  </head>
-  <body>
+        .textoRoda {
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
@@ -35,31 +43,28 @@
     <div class="container-fluid">
 
         <!-- Parte superior -->
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" width="30" height="30" class="d-inline-block align-top"
-                    alt="">
+        <nav class="navbar navbar-light bg-light" id="home">
+            <a class="navbar-brand" href="#home">
+                <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo do postgreSQL">
                 PostgreSQL
             </a>
-        </nav>
-
-        <!-- Menu -->
-        
+            <!-- Menu -->
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">História</a>
+                    <a class="nav-link active" href="#historia">História</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Vantagens</a>
+                    <a class="nav-link" href="#vantagem">Vantagens</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Curiosidades</a>
+                    <a class="nav-link" href="#curiosidade">Curiosidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quem está usando</a>
+                    <a class="nav-link" href="#quem">Quem está usando</a>
                 </li>
             </ul>
-        
+        </nav>
+
         <!-- slides -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -87,34 +92,158 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
-
-        <p>História</p>
-        <p>Vantagem</p>
-        <p>Curiosidades</p>
-        <!-- cards -->
-        <p>Quem está usando</p>
-        <div class="card" style="width: 18rem;">
+        <div class="container-fluid text-justify" id="historia">
+            <h2>História</h2>
+            <p>
+                Teve a sua origem em um projeto chamado de POSTGRES na Universidade Berkeley, na California, em 1986.
+                Uma equipe Orienteda pelo progessor Michael Stonebraker foi designada para criar o modelo e as regras de
+                um novo sistema de armazenamento de dads com o apoio de diversos órgaos, entre eles o Army Resarch
+                office(aro) e o National Schema Foundation(NSF)</p>
+            <p>
+                A primeira versão de demonstração do projeto ficou pronta em 1987, e logo em seguida foi apresentada em
+                diversos meios. Em 1989, a primeira versão estável foi lançada, com sucessivos lançamentos anuais de
+                novas versões com diversas correcções de bugs. Em meados de 1991, seu código foi adquirido pela empresa
+                ILLUSTRA INFORMATION TECHNOLOGIES, a qual se fundiu com a infromix, hoje pertence a IBM, A empresa
+                informix era propriedade do Porfessor Michael Stonebraker, orientador do projeto POSTGRES e que foi
+                comrpada por US$ 1 Bilhão pela IBM em 2001.
+            </p>
+            <p>
+                A primeira grande mudança no projeto POSTGRES ocorreu em 1994. Devido a crescente popularidade que a
+                ferramenta estava adquirindo, o projeto foi encerrado, dando origem ao programa Postgres95, que trouxe
+                uma grande vantagem em sua primeira versão, a incorporação da linguagem SQL, pelos desenvolvedores
+                Andrew Yue JOlly Chen, subistituindo a linguagem PostQUEL. E o programa na época foi totalmetente
+                contabilizado com o padrão ANSI C, tornando-se portável apra mais de uma plataforma, entre outras
+                diversas melhorias.
+            </p>
+            <p>
+                No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado. Novamente a
+                ferramenta foi mudada, destavez para o nome que conhecemos hoje PostgreSQL. Atualmente, o SGBD
+                encontra-se na versão $$ estável, contendo todas as principais caracteristicas que um sgbd pode
+                disponibilizar
+            </p>
+        </div>
+        <div class="container-fluid" id="vantagem">
+            <h2>Vantagem</h2>
+            <p>
+                teste
+            </p>
+        </div>
+        <div class="container-fluid text-justify" id="curiosidade">
+            <h2>Curiosidades</h2>
+            <p>
+                O postgreSQL não tem limite de tamanho para seus banco de dados, sendo a única limitação para tal
+                critério o hardware disponivel pelo computador em que o PostgreSQL está armazenando as suas informações.
+                Sua limitação dá-se em nível de tabela, com um limite máximo de 32TB por tabela. Além do mais, é
+                possível ter registros(linhas) com até 1.6TB, campos com até 1GB, tabelas com até 1600 campos e indices
+                ilimitados para aceleração da busca dos resultados.
+                A estabilidade também é um de seus recursos mais interessantes, pois foi projetado para executar no
+                método 24/7(24 horas por dia, sete dias na semana)
+            </p>
+        </div>
+        <div class="container-fluid" id="quem">
+            <h2>Quem está usando</h2>
+            <!-- cards -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome da Empresa</h5>
+                            <p class="card-text">
+                                O que faz?
+                            </p>
+                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome da Empresa</h5>
+                            <p class="card-text">
+                                O que faz?
+                            </p>
+                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome da Empresa</h5>
+                            <p class="card-text">
+                                O que faz?
+                            </p>
+                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome da Empresa</h5>
+                            <p class="card-text">
+                                O que faz?
+                            </p>
+                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!--   <div class="card" style="width: 18rem;">
             <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
             <div class="card-body">
-              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-            <div class="card-body">
-              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-            </div>
-          </div>
-
-        
-
-        <div class="row" id="roda">
-            <div class="col-12">
-                Rodapé
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
+                    conteúdo do card.</p>
             </div>
         </div>
 
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+            <div class="card-body">
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
+                    conteúdo do card.</p>
+            </div>
+        </div>
+ -->
+
+        <div class="container-fluid" id="roda">
+            <div class="row align-items-start">
+                <div class="col textoRoda">
+                    <p> Mapa do Site</p>
+                    <p>
+                        <a href="#home" class="text-white stretched-link">Home</a>
+                    </p>
+                    <p>
+                        <a href="#historia" class="text-white stretched-link">Historia do PostgreSQL</a>
+                    </p>
+                    <p>
+                        <a href="#vantagem" class="text-white stretched-link">Vantagens do PostgreSQL</a>
+                    </p>
+                    <p>
+                        <a href="#curiosidade" class="text-white stretched-link">Cursiosidades do PostgreSQL</a>
+                    </p>
+                    <p>
+                        <a href="#quem" class="text-white stretched-link">Quem Utiliza o PostgreSQL</a>
+                    </p>
+                </div>
+                <div class="col textoRoda">
+                    <p>Desenvolvedores</p>
+                    <p>André Luiz</p>
+                    <p>Douglas Shibata</p>
+                    <p>Marcos Allysson</p>
+                </div>
+                <div class="col textoRoda">
+                    <p> Referências</p>
+                    <p><a href="https://getbootstrap.com/" target="_blank"
+                            class="text-white stretched-link">Bootstrap</a></p>
+                    <p><a href="https://www.postgresql.org/" target="_blank"
+                            class="text-white stretched-link">PostgreSQL</a> </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
