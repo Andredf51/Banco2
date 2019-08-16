@@ -21,10 +21,9 @@
         }
 
         #imagemteste {
-            width: 600px;
-            height: 400px;
+            width: 80%;
+            height: 70%;
         }
-
         .textoRoda {
             color: #ffffff;
         }
@@ -95,12 +94,14 @@
         <div class="container-fluid text-justify" id="historia">
             <h2>História</h2>
             <p>
-                &emsp; Teve a sua origem em um projeto chamado de POSTGRES na Universidade Berkeley, na California, em 1986.
+                &emsp; Teve a sua origem em um projeto chamado de POSTGRES na Universidade Berkeley, na California, em
+                1986.
                 Uma equipe Orienteda pelo progessor Michael Stonebraker foi designada para criar o modelo e as regras de
                 um novo sistema de armazenamento de dads com o apoio de diversos órgaos, entre eles o Army Resarch
                 office(aro) e o National Schema Foundation(NSF)</p>
             <p>
-                &emsp; A primeira versão de demonstração do projeto ficou pronta em 1987, e logo em seguida foi apresentada em
+                &emsp; A primeira versão de demonstração do projeto ficou pronta em 1987, e logo em seguida foi
+                apresentada em
                 diversos meios. Em 1989, a primeira versão estável foi lançada, com sucessivos lançamentos anuais de
                 novas versões com diversas correcções de bugs. Em meados de 1991, seu código foi adquirido pela empresa
                 ILLUSTRA INFORMATION TECHNOLOGIES, a qual se fundiu com a infromix, hoje pertence a IBM, A empresa
@@ -108,7 +109,8 @@
                 comrpada por US$ 1 Bilhão pela IBM em 2001.
             </p>
             <p>
-                &emsp; A primeira grande mudança no projeto POSTGRES ocorreu em 1994. Devido a crescente popularidade que a
+                &emsp; A primeira grande mudança no projeto POSTGRES ocorreu em 1994. Devido a crescente popularidade
+                que a
                 ferramenta estava adquirindo, o projeto foi encerrado, dando origem ao programa Postgres95, que trouxe
                 uma grande vantagem em sua primeira versão, a incorporação da linguagem SQL, pelos desenvolvedores
                 Andrew Yue JOlly Chen, subistituindo a linguagem PostQUEL. E o programa na época foi totalmetente
@@ -116,7 +118,8 @@
                 diversas melhorias.
             </p>
             <p>
-                &emsp; No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado. Novamente a
+                &emsp; No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado.
+                Novamente a
                 ferramenta foi mudada, destavez para o nome que conhecemos hoje PostgreSQL. Atualmente, o SGBD
                 encontra-se na versão $$ estável, contendo todas as principais caracteristicas que um sgbd pode
                 disponibilizar
@@ -143,43 +146,12 @@
         <div class="container-fluid" id="quem">
             <h2>Quem está usando</h2>
             <!-- cards -->
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="Apple.png" alt="Card Apple">
-                <div class="card-body">
-                    <h5 class="card-title">Apple</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <a href="https://www.apple.com/br/" class="btn btn-primary">Site da Empresa</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="Olx.jpeg" alt="Card Olx">
-                <div class="card-body">
-                    <h5 class="card-title">OLX</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">Site da Empresa</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="IFB.png" alt="Card Ifb">
-                <div class="card-body">
-                    <h5 class="card-title">IFB</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">Site da Empresa</a>
-                </div>
-            </div>
-
-
             <div class="row">
                 <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Nome da Empresa</h5>
+                            <img class="card-img-top" src="Olx.jpeg" alt="Card Olx">
+                            <h5 class="card-title">OLX</h5>
                             <p class="card-text">
                                 O que faz?
                             </p>
@@ -190,22 +162,24 @@
                 <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Nome da Empresa</h5>
+                            <img class="card-img-top card-deck" src="IFB.png" alt="Card Ifb" style="width: 80%;">
+                            <h5 class="card-title">IFB</h5>
                             <p class="card-text">
                                 O que faz?
                             </p>
-                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                            <a href="http://dtic.ifb.edu.br/" class="btn btn-primary" target="_blank">Site da Dtic</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Nome da Empresa</h5>
+                                <img class="card-img-top" src="Apple.png" alt="Card Apple">
+                            <h5 class="card-title">Apple</h5>
                             <p class="card-text">
                                 O que faz?
                             </p>
-                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                            <a href="https://www.apple.com/br/" class="btn btn-primary" target="_blank">Site da Apple</a>
                         </div>
                     </div>
                 </div>
@@ -262,9 +236,23 @@
                 </div>
                 <div class="col textoRoda">
                     <p>Desenvolvedores</p>
-                    <p>André Luiz</p>
-                    <p>Douglas Shibata</p>
-                    <p>Marcos Allysson</p>
+                    <p> <a href="http://lattes.cnpq.br/9013723126437822" target="_blank"
+                            class="text-white stretched-link">
+                            <b>André Luiz</b>
+                        </a>
+                    </p>
+                    <p><a href="http://lattes.cnpq.br/1617971566094158" target="_blank"
+                            class="text-white stretched-link">
+                            <b>Douglas Shibata</b>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="http://lattes.cnpq.br/2333682990458352" target="_blank"
+                            class="text-white stretched-link">
+                            <b> Marcos Allysson</b>
+                        </a>
+                    </p>
+
                 </div>
                 <div class="col textoRoda">
                     <p> Referências</p>
