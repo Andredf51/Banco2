@@ -91,6 +91,24 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
+
+        <div class="container-fluid text-justify" id="quee">
+            <h2>O que é o PostgreSQL</h2>
+            <p>
+                &emsp; O PostgreSQL é um poderoso sistema de banco de dados objeto-relacional de código-fonte aberto que 
+                usa e estende a linguagem SQL combinada com muitos recursos que armazenam e dimensionam com segurança 
+                as cargas de trabalho de dados mais complicadas.
+            </p>
+            <p>
+                &emsp; O PostgreSQL ganhou uma forte reputação por sua arquitetura comprovada, confiabilidade, integridade
+                 de dados, conjunto robusto de recursos, extensibilidade e dedicação da comunidade de código aberto por trás 
+                do software para fornecer soluções eficazes e inovadoras de maneira consistente. O PostgreSQL é executado 
+                em todos os principais sistemas operacionais, tem sido compatível com ACID desde 2001 e possui poderosos 
+                complementos, como o popular extensor de banco de dados geoespacial PostGIS. Não é surpresa que o PostgreSQL 
+                tenha se tornado o banco de dados relacional de código aberto preferido por muitas pessoas e organizações.
+            </p>
+        </div>
+
         <div class="container-fluid text-justify" id="historia">
             <h2>História</h2>
             <p>
@@ -128,7 +146,50 @@
         <div class="container-fluid" id="vantagem">
             <h2>Vantagem</h2>
             <p>
-                teste
+                O PostgreSQL vem com muitos recursos voltados para ajudar os desenvolvedores a criar aplicativos, administradores para proteger a integridade dos dados e criar ambientes tolerantes a falhas, além de ajudá-lo a gerenciar seus dados, independentemente de quão grande ou pequeno seja o conjunto de dados. Além de ser livre e de código aberto , o PostgreSQL é altamente extensível. Por exemplo, você pode definir seus próprios tipos de dados, criar funções personalizadas e até mesmo escrever códigos de diferentes linguagens de programação sem recompilar seu banco de dados!
+O PostgreSQL tenta estar em conformidade com o padrão SQL, onde tal conformidade não contradiz os recursos tradicionais ou pode levar a decisões arquitetônicas ruins. Muitos dos recursos exigidos pelo padrão SQL são suportados, embora às vezes com uma sintaxe ou função ligeiramente diferente. Outros movimentos em direção à conformidade podem ser esperados ao longo do tempo. A partir do lançamento da versão 11 em outubro de 2018, o PostgreSQL está em conformidade com pelo menos 160 dos 179 recursos obrigatórios do SQL: Conformidade do núcleo 2011. A partir desta escrita, nenhum banco de dados relacional atende à plena conformidade com este padrão.
+Abaixo está uma lista inesgotável de vários recursos encontrados no PostgreSQL, com mais sendo adicionados em todas as principais versões :
+    • Tipos de dados
+        ◦ Primitivos: Inteiro, Numérico, String, Booleano
+        ◦ Estruturado: Data / Hora, Matriz, Intervalo, UUID
+        ◦ Documento: JSON / JSONB, XML, valor-chave (Hstore)
+        ◦ Geometria: ponto, linha, círculo, polígono
+        ◦ Personalizações: composição, tipos personalizados
+    • Integridade de dados
+        ◦ ÚNICO, NÃO NULO
+        ◦ Chaves Primárias
+        ◦ Chaves Estrangeiras
+        ◦ Restrições de Exclusão
+        ◦ Bloqueios explícitos, bloqueios consultivos
+    • Concorrência, Desempenho
+        ◦ Indexação: B-tree, Multicolumn, Expressions, Parcial
+        ◦ Indexação Avançada: GiST, SP-Gist, KNN, GIN, BRIN, Covering indexes, Bloom filters
+        ◦ Planejador / otimizador de consultas sofisticadas, verificações apenas por índice, estatísticas de várias colunas
+        ◦ Transações, transações aninhadas (via savepoints)
+        ◦ Controle de simultaneidade de múltiplas versões (MVCC)
+        ◦ Paralelização de consultas de leitura e construção de índices de árvore B
+        ◦ Particionamento de tabela
+        ◦ Todos os níveis de isolamento de transação definidos no padrão SQL, incluindo Serializable
+        ◦ Compilação just-in-time (JIT) de expressões
+    • Confiabilidade, Recuperação de Desastres
+        ◦ Registo de write-ahead (WAL)
+        ◦ Replicação: Assíncrono, Síncrono, Lógico
+        ◦ Recuperação point-in-time (PITR), standby ativo
+        ◦ Espaços de tabela
+    • Segurança
+        ◦ Autenticação: GSSAPI, SSPI, LDAP, SCRAM-SHA-256, certificado e muito mais
+        ◦ Sistema robusto de controle de acesso
+        ◦ Segurança em nível de coluna e linha
+    • Extensibilidade
+        ◦ Funções e procedimentos armazenados
+        ◦ Linguagens procedurais: PL / PGSQL, Perl, Python (e muito mais)
+        ◦ Invólucros de dados externos: conecte-se a outros bancos de dados ou fluxos com uma interface SQL padrão
+        ◦ Muitas extensões que fornecem funcionalidade adicional, incluindo PostGIS
+    • Internacionalização, Pesquisa de Texto
+        ◦ Suporte para conjuntos de caracteres internacionais, por exemplo, através de agrupamentos de UTI
+        ◦ Pesquisa de texto completo
+Existem muitos outros recursos que você pode descobrir na documentação do PostgreSQL . Além disso, o PostgreSQL é altamente extensível: muitos recursos, como índices, têm APIs definidas para que você possa construir com o PostgreSQL para resolver seus desafios.
+O PostgreSQL provou ser altamente escalável, tanto na grande quantidade de dados que pode gerenciar quanto no número de usuários simultâneos que pode acomodar. Há clusters ativos do PostgreSQL em ambientes de produção que gerenciam muitos terabytes de dados e sistemas especializados que gerenciam petabytes.
             </p>
         </div>
         <div class="container-fluid text-justify" id="curiosidade">
@@ -154,8 +215,9 @@
                             <h5 class="card-title">OLX</h5>
                             <p class="card-text">
                                 O que faz?
+                                Site de compras e vendas de produtos novos e usados.
                             </p>
-                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                            <a href="https://www.olx.com.br/" class="btn btn-primary" target="_blank">Site da OLX</a>
                         </div>
                     </div>
                 </div>
@@ -166,6 +228,7 @@
                             <h5 class="card-title">IFB</h5>
                             <p class="card-text">
                                 O que faz?
+                                Setor de TI do Instituto Federal de Brasília.
                             </p>
                             <a href="http://dtic.ifb.edu.br/" class="btn btn-primary" target="_blank">Site da Dtic</a>
                         </div>
@@ -178,6 +241,7 @@
                             <h5 class="card-title">Apple</h5>
                             <p class="card-text">
                                 O que faz?
+                                Empresa de tecnologia e inovação. 
                             </p>
                             <a href="https://www.apple.com/br/" class="btn btn-primary" target="_blank">Site da Apple</a>
                         </div>
