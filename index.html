@@ -3,36 +3,41 @@
 
 <head>
     <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-    <title>PostgreSQL</title>
-
+    <title> PostgreSQL </title>
 
     <style type="text/css">
         #roda {
+            /* cor do postgreesql */
             border: 1px solid #000;
             min-height: 100px;
             background-color: #336791;
-            /* cor do postgreesql */
         }
 
         #imagemteste {
             width: 80%;
             height: 70%;
         }
-        .textoRoda {
-            color: #ffffff;
+
+        .title {
+            color: #336791;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
+
+        .textoRoda { color: #ffffff; }
+        p { text-indent: 30px; text-align: center; }
     </style>
 
 </head>
 
 <body>
-
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -50,16 +55,22 @@
             <!-- Menu -->
             <ul class="nav justify-content-center">
                 <li class="nav-item">
+                    <a class="nav-link active" href="#oqueé">O que é? </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" href="#historia">História</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#vantagem">Vantagens</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#curiosidade">Curiosidades</a>
+                    <a class="nav-link" href="#preco"> Preço </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#quem">Quem está usando</a>
+                    <a class="nav-link" href="#quem"> Quem Usa </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#curiosidade">Curiosidades</a>
                 </li>
             </ul>
         </nav>
@@ -92,120 +103,171 @@
             </a>
         </div>
 
-        <div class="container-fluid text-justify" id="quee">
-            <h2>O que é o PostgreSQL</h2>
+        <!-- o que é postgresql  -->
+        <div class="container-fluid text-justify" id="oqueé">
+            <h2 class="title"> <b> O que é o PostgreSQL </b></h2>
             <p>
-                &emsp; O PostgreSQL é um poderoso sistema de banco de dados objeto-relacional de código-fonte aberto que 
-                usa e estende a linguagem SQL combinada com muitos recursos que armazenam e dimensionam com segurança 
+                O PostgreSQL é um poderoso sistema de banco de dados objeto-relacional de código-fonte aberto que
+                usa e estende a linguagem SQL combinada com muitos recursos que armazenam e dimensionam com segurança
                 as cargas de trabalho de dados mais complicadas.
+                É otimizado para aplicações complexas, isto é, que envolvem grandes volumes de dados ou que
+                tratam de informações críticas.
             </p>
             <p>
-                &emsp; O PostgreSQL ganhou uma forte reputação por sua arquitetura comprovada, confiabilidade, integridade
-                 de dados, conjunto robusto de recursos, extensibilidade e dedicação da comunidade de código aberto por trás 
-                do software para fornecer soluções eficazes e inovadoras de maneira consistente. O PostgreSQL é executado 
-                em todos os principais sistemas operacionais, tem sido compatível com ACID desde 2001 e possui poderosos 
-                complementos, como o popular extensor de banco de dados geoespacial PostGIS. Não é surpresa que o PostgreSQL 
-                tenha se tornado o banco de dados relacional de código aberto preferido por muitas pessoas e organizações.
+                Ganhou uma forte reputação por sua arquitetura comprovada, confiabilidade,
+                integridade de dados, conjunto robusto de recursos, extensibilidade e dedicação da comunidade de código
+                aberto por trás do software para fornecer soluções eficazes e inovadoras de maneira consistente.
+                E é executado em todos os principais sistemas operacionais.
             </p>
         </div>
 
+        <!-- história do postgre -->
         <div class="container-fluid text-justify" id="historia">
-            <h2>História</h2>
+            <h2 class="title"> <b> História </b> </h2>
             <p>
-                &emsp; Teve a sua origem em um projeto chamado de POSTGRES na Universidade Berkeley, na California, em
-                1986.
-                Uma equipe Orienteda pelo progessor Michael Stonebraker foi designada para criar o modelo e as regras de
-                um novo sistema de armazenamento de dads com o apoio de diversos órgaos, entre eles o Army Resarch
-                office(aro) e o National Schema Foundation(NSF)</p>
-            <p>
-                &emsp; A primeira versão de demonstração do projeto ficou pronta em 1987, e logo em seguida foi
-                apresentada em
-                diversos meios. Em 1989, a primeira versão estável foi lançada, com sucessivos lançamentos anuais de
-                novas versões com diversas correcções de bugs. Em meados de 1991, seu código foi adquirido pela empresa
-                ILLUSTRA INFORMATION TECHNOLOGIES, a qual se fundiu com a infromix, hoje pertence a IBM, A empresa
-                informix era propriedade do Porfessor Michael Stonebraker, orientador do projeto POSTGRES e que foi
-                comrpada por US$ 1 Bilhão pela IBM em 2001.
+                Teve a sua origem em um projeto chamado de POSTGRES na Universidade Berkeley, na Califórnia, em
+                1986. Uma equipe Orienteda pelo progessor Michael Stonebraker foi designada para criar o modelo e as
+                regras de um novo sistema de armazenamento de dados com o apoio de diversos órgãos, entre eles o Army Resarch
+                office(aro) e o National Schema Foundation(NSF).
             </p>
             <p>
-                &emsp; A primeira grande mudança no projeto POSTGRES ocorreu em 1994. Devido a crescente popularidade
-                que a
-                ferramenta estava adquirindo, o projeto foi encerrado, dando origem ao programa Postgres95, que trouxe
-                uma grande vantagem em sua primeira versão, a incorporação da linguagem SQL, pelos desenvolvedores
+                A primeira versão de demonstração do projeto ficou pronta em 1987, e logo em seguida foi
+                apresentada em diversos meios. Em 1989, a primeira versão estável foi lançada, com sucessivos
+                lançamentos anuais de novas versões com diversas correcções de bugs. Em meados de 1991, seu código foi adquirido 
+                pela empresa ILLUSTRA INFORMATION TECHNOLOGIES, a qual se fundiu com a infromix, hoje pertence a IBM. A empresa
+                informix era propriedade do Porfessor Michael Stonebraker, orientador do projeto POSTGRES e que foi
+                comprada por US$ 1 Bilhão pela IBM em 2001.
+            </p>
+            <p>
+                A primeira grande mudança no projeto POSTGRES ocorreu em 1994. Devido a crescente popularidade
+                que a ferramenta estava adquirindo, o projeto foi encerrado, dando origem ao programa Postgres95, que
+                trouxe uma grande vantagem em sua primeira versão, a incorporação da linguagem SQL, pelos desenvolvedores
                 Andrew Yue JOlly Chen, subistituindo a linguagem PostQUEL. E o programa na época foi totalmetente
-                contabilizado com o padrão ANSI C, tornando-se portável apra mais de uma plataforma, entre outras
+                contabilizado com o padrão ANSI C, tornando-se portável mais de uma plataforma, entre outras
                 diversas melhorias.
             </p>
             <p>
-                &emsp; No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado.
-                Novamente a
-                ferramenta foi mudada, destavez para o nome que conhecemos hoje PostgreSQL. Atualmente, o SGBD
-                encontra-se na versão $$ estável, contendo todas as principais caracteristicas que um sgbd pode
-                disponibilizar
+                 No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado.
+                Novamente a ferramenta foi mudada, desta vez para o nome que conhecemos hoje PostgreSQL. Atualmente, o
+                SGBD encontra-se na versão estável, contendo todas as principais caracteristicas que um SGBD pode
+                disponibilizar.
             </p>
         </div>
+
+        <!-- vantagens -->
         <div class="container-fluid" id="vantagem">
-            <h2>Vantagem</h2>
+            <h2 class="title"> <b> Vantagens </b>  </h2>
             <p>
-                O PostgreSQL vem com muitos recursos voltados para ajudar os desenvolvedores a criar aplicativos, administradores para proteger a integridade dos dados e criar ambientes tolerantes a falhas, além de ajudá-lo a gerenciar seus dados, independentemente de quão grande ou pequeno seja o conjunto de dados. Além de ser livre e de código aberto , o PostgreSQL é altamente extensível. Por exemplo, você pode definir seus próprios tipos de dados, criar funções personalizadas e até mesmo escrever códigos de diferentes linguagens de programação sem recompilar seu banco de dados!
-O PostgreSQL tenta estar em conformidade com o padrão SQL, onde tal conformidade não contradiz os recursos tradicionais ou pode levar a decisões arquitetônicas ruins. Muitos dos recursos exigidos pelo padrão SQL são suportados, embora às vezes com uma sintaxe ou função ligeiramente diferente. Outros movimentos em direção à conformidade podem ser esperados ao longo do tempo. A partir do lançamento da versão 11 em outubro de 2018, o PostgreSQL está em conformidade com pelo menos 160 dos 179 recursos obrigatórios do SQL: Conformidade do núcleo 2011. A partir desta escrita, nenhum banco de dados relacional atende à plena conformidade com este padrão.
-Abaixo está uma lista inesgotável de vários recursos encontrados no PostgreSQL, com mais sendo adicionados em todas as principais versões :
-    • Tipos de dados
-        ◦ Primitivos: Inteiro, Numérico, String, Booleano
-        ◦ Estruturado: Data / Hora, Matriz, Intervalo, UUID
-        ◦ Documento: JSON / JSONB, XML, valor-chave (Hstore)
-        ◦ Geometria: ponto, linha, círculo, polígono
-        ◦ Personalizações: composição, tipos personalizados
-    • Integridade de dados
-        ◦ ÚNICO, NÃO NULO
-        ◦ Chaves Primárias
-        ◦ Chaves Estrangeiras
-        ◦ Restrições de Exclusão
-        ◦ Bloqueios explícitos, bloqueios consultivos
-    • Concorrência, Desempenho
-        ◦ Indexação: B-tree, Multicolumn, Expressions, Parcial
-        ◦ Indexação Avançada: GiST, SP-Gist, KNN, GIN, BRIN, Covering indexes, Bloom filters
-        ◦ Planejador / otimizador de consultas sofisticadas, verificações apenas por índice, estatísticas de várias colunas
-        ◦ Transações, transações aninhadas (via savepoints)
-        ◦ Controle de simultaneidade de múltiplas versões (MVCC)
-        ◦ Paralelização de consultas de leitura e construção de índices de árvore B
-        ◦ Particionamento de tabela
-        ◦ Todos os níveis de isolamento de transação definidos no padrão SQL, incluindo Serializable
-        ◦ Compilação just-in-time (JIT) de expressões
-    • Confiabilidade, Recuperação de Desastres
-        ◦ Registo de write-ahead (WAL)
-        ◦ Replicação: Assíncrono, Síncrono, Lógico
-        ◦ Recuperação point-in-time (PITR), standby ativo
-        ◦ Espaços de tabela
-    • Segurança
-        ◦ Autenticação: GSSAPI, SSPI, LDAP, SCRAM-SHA-256, certificado e muito mais
-        ◦ Sistema robusto de controle de acesso
-        ◦ Segurança em nível de coluna e linha
-    • Extensibilidade
-        ◦ Funções e procedimentos armazenados
-        ◦ Linguagens procedurais: PL / PGSQL, Perl, Python (e muito mais)
-        ◦ Invólucros de dados externos: conecte-se a outros bancos de dados ou fluxos com uma interface SQL padrão
-        ◦ Muitas extensões que fornecem funcionalidade adicional, incluindo PostGIS
-    • Internacionalização, Pesquisa de Texto
-        ◦ Suporte para conjuntos de caracteres internacionais, por exemplo, através de agrupamentos de UTI
-        ◦ Pesquisa de texto completo
-Existem muitos outros recursos que você pode descobrir na documentação do PostgreSQL . Além disso, o PostgreSQL é altamente extensível: muitos recursos, como índices, têm APIs definidas para que você possa construir com o PostgreSQL para resolver seus desafios.
-O PostgreSQL provou ser altamente escalável, tanto na grande quantidade de dados que pode gerenciar quanto no número de usuários simultâneos que pode acomodar. Há clusters ativos do PostgreSQL em ambientes de produção que gerenciam muitos terabytes de dados e sistemas especializados que gerenciam petabytes.
+                O PostgreSQL vem com muitos recursos voltados para ajudar os desenvolvedores a criar aplicativos,
+                administradores para proteger a integridade dos dados e criar ambientes tolerantes a falhas, além de
+                ajudá-lo a gerenciar seus dados, independentemente de quão grande ou pequeno seja o conjunto de
+                dados. 
             </p>
-        </div>
-        <div class="container-fluid text-justify" id="curiosidade">
-            <h2>Curiosidades</h2>
-            <p>
-                &emsp; O postgreSQL não tem limite de tamanho para seus banco de dados, sendo a única limitação para tal
-                critério o hardware disponivel pelo computador em que o PostgreSQL está armazenando as suas informações.
-                Sua limitação dá-se em nível de tabela, com um limite máximo de 32TB por tabela. Além do mais, é
-                possível ter registros(linhas) com até 1.6TB, campos com até 1GB, tabelas com até 1600 campos e indices
-                ilimitados para aceleração da busca dos resultados.
-                A estabilidade também é um de seus recursos mais interessantes, pois foi projetado para executar no
-                método 24/7(24 horas por dia, sete dias na semana)
+            <p> O PostgreSQL é altamente extensível. Por exemplo, você
+                pode definir seus próprios tipos de dados, criar funções personalizadas e até mesmo escrever códigos
+                de diferentes linguagens de programação sem recompilar seu banco de dados!
             </p>
+            <!-- <p> A partir do lançamento da versão 11 em outubro de 2018, o PostgreSQL está em conformidade com pelo menos 
+                160 dos 179 recursos obrigatórios do SQL: Conformidade do núcleo 2011. A partir desta escrita, nenhum banco de dados
+                relacional atende à plena conformidade com este padrão.
+            </p> -->
+            <p> As principais vantagens do PostgreSQL são: </p>
+                <b> <p> o Performance bastante admirável. </p> 
+                <p> o Multi-plataforma. </p> 
+                <p> o Altamente escalável. </p> 
+                <p> o Suporte a JSON e NOSQL </p> 
+                <p> o Comunidade ativa. </p> </b>
+
+            <p>Além de ser bastante avançado, suportando a maioria das características esperadas em um SGBD moderno:</p>
+
+            <p> <b> Stored Procedures: </b> o programador pode realizar um grande número de operações dentro do
+            próprio banco, aumentando o desempenho geral da aplicação. </p>
+
+            <p> <b> Altamente Extensível: </b> 
+            possibilidade de se utilizar operadores, tipos de dados, estruturas e métodos de acesso definidos pelo
+            usuário (o programador do sistema). </p>
+
+            <p> <b> Banco de Dados "Relacional a Objetos": </b> possui algumas características de orientação a
+            objetos, como herança, por exemplo. </p>
+
+            <p> <b> Características de Bancos Relacionais: </b> quase todas as características esperadas em um banco de dados
+            relacional são encontradas no PostgreSQL, como consultas declarativas em SQL, otimizações de consultas,
+            controle de concorrência, transações e multiusuário. </p>
+
+            <p> <b> Integridade Referencial: </b> é uma característica da última versão do PostgreSQL. O banco de dados agora
+            suporta a integridade referencial de dados. Serve para proteger dados de uma tabela sendo usada por outra. </p>
+
+            <p> <b> Instalação Simples e Rápida: </b> a instalação é muito simples, intuitiva e rápida. </p>
+
+
+            <!-- <p> • Tipos de dados
+                ◦ Primitivos: Inteiro, Numérico, String, Booleano
+                ◦ Estruturado: Data / Hora, Matriz, Intervalo, UUID
+                ◦ Documento: JSON / JSONB, XML, valor-chave (Hstore)
+                ◦ Geometria: ponto, linha, círculo, polígono
+                ◦ Personalizações: composição, tipos personalizados
+            </p>
+            <p> • Integridade de dados
+                ◦ ÚNICO, NÃO NULO
+                ◦ Chaves Primárias
+                ◦ Chaves Estrangeiras
+                ◦ Restrições de Exclusão
+                ◦ Bloqueios explícitos, bloqueios consultivos
+            </p>
+            <p> • Concorrência, Desempenho
+                ◦ Indexação: B-tree, Multicolumn, Expressions, Parcial
+                ◦ Indexação Avançada: GiST, SP-Gist, KNN, GIN, BRIN, Covering indexes, Bloom filters
+                ◦ Planejador / otimizador de consultas sofisticadas, verificações apenas por índice, estatísticas de
+                várias colunas
+                ◦ Transações, transações aninhadas (via savepoints)
+                ◦ Controle de simultaneidade de múltiplas versões (MVCC)
+                ◦ Paralelização de consultas de leitura e construção de índices de árvore B
+                ◦ Particionamento de tabela
+                ◦ Todos os níveis de isolamento de transação definidos no padrão SQL, incluindo Serializable
+                ◦ Compilação just-in-time (JIT) de expressões
+            </p>
+            <p> • Confiabilidade, Recuperação de Desastres
+                ◦ Registo de write-ahead (WAL)
+                ◦ Replicação: Assíncrono, Síncrono, Lógico
+                ◦ Recuperação point-in-time (PITR), standby ativo
+                ◦ Espaços de tabela
+            </p>
+            <p> • Segurança
+                ◦ Autenticação: GSSAPI, SSPI, LDAP, SCRAM-SHA-256, certificado e muito mais
+                ◦ Sistema robusto de controle de acesso
+                ◦ Segurança em nível de coluna e linha
+            </p>
+            <p> • Extensibilidade
+                ◦ Funções e procedimentos armazenados
+                ◦ Linguagens procedurais: PL / PGSQL, Perl, Python (e muito mais)
+                ◦ Invólucros de dados externos: conecte-se a outros bancos de dados ou fluxos com uma interface SQL
+                padrão
+                ◦ Muitas extensões que fornecem funcionalidade adicional, incluindo PostGIS
+            </p>
+            <p> • Internacionalização, Pesquisa de Texto
+                ◦ Suporte para conjuntos de caracteres internacionais, por exemplo, através de agrupamentos de UTI
+                ◦ Pesquisa de texto completo
+            </p>
+            <p> Existem muitos outros recursos que você pode descobrir na documentação do PostgreSQL . Além disso, o
+                PostgreSQL é altamente extensível: muitos recursos, como índices, têm APIs definidas para que você possa
+                construir com o PostgreSQL para resolver seus desafios.
+            </p>
+            <p> O PostgreSQL provou ser altamente escalável, tanto na grande quantidade de dados que pode gerenciar
+                quanto no número de usuários simultâneos que pode acomodar. Há clusters ativos do PostgreSQL em
+                ambientes de produção que gerenciam muitos terabytes de dados e sistemas especializados que gerenciam
+                petabytes.
+            </p> -->
         </div>
+
+        <!-- preço -->
+        <div class="container-fluid text-justify" id="preco">
+            <h2 class="title"> <b> Preço </b> </h2>
+            <p> É gratuito e opensource. É disponível para que qualquer pessoa redistruibuir e modificar. </p>
+        </div>
+
+        <!-- quem usa -->
         <div class="container-fluid" id="quem">
-            <h2>Quem está usando</h2>
+            <h2 class="title"> <b> Quem Usa </b> </h2>
             <!-- cards -->
             <div class="row">
                 <div class="col-sm-3">
@@ -237,29 +299,79 @@ O PostgreSQL provou ser altamente escalável, tanto na grande quantidade de dado
                 <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                                <img class="card-img-top" src="Apple.png" alt="Card Apple">
+                            <img class="card-img-top" src="Apple.png" alt="Card Apple">
                             <h5 class="card-title">Apple</h5>
                             <p class="card-text">
                                 O que faz?
-                                Empresa de tecnologia e inovação. 
+                                Empresa de tecnologia e inovação.
                             </p>
-                            <a href="https://www.apple.com/br/" class="btn btn-primary" target="_blank">Site da Apple</a>
+                            <a href="https://www.apple.com/br/" class="btn btn-primary" target="_blank">Site da
+                                Apple</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Nome da Empresa</h5>
+                            <img class="card-img-top" src="netflix.png" alt="Netflix">
+                            <h5 class="card-title"> Netflix </h5>
                             <p class="card-text">
                                 O que faz?
+                                Empresa de tecnologia e inovação.
                             </p>
-                            <a href="#" class="btn btn-primary">Site da Empresa</a>
+                            <a href="https://www.netflix.com/br/" class="btn btn-primary" target="_blank">Site da
+                                Netflix</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="uber.png" alt="Uber">
+                            <h5 class="card-title">Uber</h5>
+                            <p class="card-text">
+                                O que faz?
+                                Empresa de tecnologia e inovação no nicho de transporte.
+                            </p>
+                            <a href="https://www.uber.com/br/pt-br/" class="btn btn-primary" target="_blank">Site da
+                                Uber</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="spotify.jpg" alt="Spotify">
+                            <h5 class="card-title">Spotify</h5>
+                            <p class="card-text">
+                                O que faz?
+                                Empresa de tecnologia e inovação.
+                            </p>
+                            <a href="https://www.spotify.com/br/" class="btn btn-primary" target="_blank">Site da
+                                Spotify</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Curiosidades -->
+        <div class="container-fluid text-justify" id="curiosidade">
+            <h2 class="title"> <b> Curiosidades </b> </h2>
+            <p>
+                 O postgreSQL não tem limite de tamanho para seus banco de dados, sendo a única limitação para
+                o hardware disponível pelo computador em que o PostgreSQL está armazenando as suas informações.
+            </p>
+            <p> Sua limitação dá-se em nível de tabela, com um limite máximo de 32TB por tabela. Além do mais, é
+                possível ter registros(linhas) com até 1.6TB. A estabilidade também é um de seus recursos mais
+                interessantes,
+                pois foi projetado para executar no método 24/7 (24 horas por dia, sete dias na semana).
+            </p>
+        </div>
+
         <br />
         <!--   <div class="card" style="width: 18rem;">
             <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
@@ -278,6 +390,7 @@ O PostgreSQL provou ser altamente escalável, tanto na grande quantidade de dado
         </div>
  -->
 
+        <!-- footer -->
         <div class="container-fluid" id="roda">
             <div class="row align-items-start">
                 <div class="col textoRoda">
@@ -286,18 +399,20 @@ O PostgreSQL provou ser altamente escalável, tanto na grande quantidade de dado
                         <a href="#home" class="text-white stretched-link">Home</a>
                     </p>
                     <p>
-                        <a href="#historia" class="text-white stretched-link">Historia do PostgreSQL</a>
+                        <a href="#historia" class="text-white stretched-link">História do PostgreSQL</a>
                     </p>
                     <p>
                         <a href="#vantagem" class="text-white stretched-link">Vantagens do PostgreSQL</a>
                     </p>
                     <p>
-                        <a href="#curiosidade" class="text-white stretched-link">Cursiosidades do PostgreSQL</a>
+                        <a href="#curiosidade" class="text-white stretched-link">Curiosidades do PostgreSQL</a>
                     </p>
                     <p>
-                        <a href="#quem" class="text-white stretched-link">Quem Utiliza o PostgreSQL</a>
+                        <a href="#quem" class="text-white stretched-link">Quais Empresas Usam PostgreSQL</a>
                     </p>
                 </div>
+
+                <!-- developers -->
                 <div class="col textoRoda">
                     <p>Desenvolvedores</p>
                     <p> <a href="http://lattes.cnpq.br/9013723126437822" target="_blank"
