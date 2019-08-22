@@ -19,11 +19,6 @@
             background-color: #336791;
         }
 
-        #imagemteste {
-            width: 80%;
-            height: 70%;
-        }
-
         .title {
             color: #336791;
             text-align: center;
@@ -84,13 +79,13 @@
             </ol>
             <div class="text-center">
                 <div class="carousel-item active">
-                    <img id="imagemteste" src="imagem01.png" alt="Primeiro Slide">
+                    <img src="imagem011.png" alt="Primeiro Slide">
                 </div>
                 <div class="carousel-item">
-                    <img id="imagemteste" src="imagem02.png" alt="Segundo Slide">
+                    <img src="imagem022.png" alt="Segundo Slide">
                 </div>
                 <div class="carousel-item">
-                    <img id="imagemteste" src="imagem03.png" alt="Terceiro Slide">
+                    <img src="imagem033.png" alt="Terceiro Slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -104,16 +99,16 @@
         </div>
 
         <!-- o que é postgresql  -->
-        <div class="container-fluid text-justify" id="oqueé">
+        <div class="container-fluid " id="oqueé">
             <h2 class="title"> <b> O que é o PostgreSQL </b></h2>
-            <p>
+            <p class="text-justify">
                 O PostgreSQL é um poderoso sistema de banco de dados objeto-relacional de código-fonte aberto que
                 usa e estende a linguagem SQL combinada com muitos recursos que armazenam e dimensionam com segurança
                 as cargas de trabalho de dados mais complicadas.
                 É otimizado para aplicações complexas, isto é, que envolvem grandes volumes de dados ou que
                 tratam de informações críticas.
             </p>
-            <p>
+            <p class="text-justify">
                 Ganhou uma forte reputação por sua arquitetura comprovada, confiabilidade,
                 integridade de dados, conjunto robusto de recursos, extensibilidade e dedicação da comunidade de código
                 aberto por trás do software para fornecer soluções eficazes e inovadoras de maneira consistente.
@@ -124,13 +119,13 @@
         <!-- história do postgre -->
         <div class="container-fluid text-justify" id="historia">
             <h2 class="title"> <b> História </b> </h2>
-            <p>
+            <p class="text-justify">
                 Teve a sua origem em um projeto chamado de POSTGRES na Universidade Berkeley, na Califórnia, em
                 1986. Uma equipe Orienteda pelo progessor Michael Stonebraker foi designada para criar o modelo e as
                 regras de um novo sistema de armazenamento de dados com o apoio de diversos órgãos, entre eles o Army Resarch
                 office(aro) e o National Schema Foundation(NSF).
             </p>
-            <p>
+            <p class="text-justify">
                 A primeira versão de demonstração do projeto ficou pronta em 1987, e logo em seguida foi
                 apresentada em diversos meios. Em 1989, a primeira versão estável foi lançada, com sucessivos
                 lançamentos anuais de novas versões com diversas correcções de bugs. Em meados de 1991, seu código foi adquirido 
@@ -138,16 +133,16 @@
                 informix era propriedade do Porfessor Michael Stonebraker, orientador do projeto POSTGRES e que foi
                 comprada por US$ 1 Bilhão pela IBM em 2001.
             </p>
-            <p>
+            <p class="text-justify">
                 A primeira grande mudança no projeto POSTGRES ocorreu em 1994. Devido a crescente popularidade
                 que a ferramenta estava adquirindo, o projeto foi encerrado, dando origem ao programa Postgres95, que
                 trouxe uma grande vantagem em sua primeira versão, a incorporação da linguagem SQL, pelos desenvolvedores
                 Andrew Yue JOlly Chen, subistituindo a linguagem PostQUEL. E o programa na época foi totalmetente
                 contabilizado com o padrão ANSI C, tornando-se portável mais de uma plataforma, entre outras
                 diversas melhorias.
-            </p>
-            <p>
-                 No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado.
+            </p class="text-justify">
+            <p class="text-justify">
+                No ano de 1996, novas melhorias foram surgiram e o novo Postgres95 já estava desatualizado.
                 Novamente a ferramenta foi mudada, desta vez para o nome que conhecemos hoje PostgreSQL. Atualmente, o
                 SGBD encontra-se na versão estável, contendo todas as principais caracteristicas que um SGBD pode
                 disponibilizar.
@@ -157,13 +152,13 @@
         <!-- vantagens -->
         <div class="container-fluid" id="vantagem">
             <h2 class="title"> <b> Vantagens </b>  </h2>
-            <p>
+            <p class="text-justify">
                 O PostgreSQL vem com muitos recursos voltados para ajudar os desenvolvedores a criar aplicativos,
                 administradores para proteger a integridade dos dados e criar ambientes tolerantes a falhas, além de
                 ajudá-lo a gerenciar seus dados, independentemente de quão grande ou pequeno seja o conjunto de
                 dados. 
             </p>
-            <p> O PostgreSQL é altamente extensível. Por exemplo, você
+            <p class="text-justify"> O PostgreSQL é altamente extensível. Por exemplo, você
                 pode definir seus próprios tipos de dados, criar funções personalizadas e até mesmo escrever códigos
                 de diferentes linguagens de programação sem recompilar seu banco de dados!
             </p>
@@ -171,33 +166,33 @@
                 160 dos 179 recursos obrigatórios do SQL: Conformidade do núcleo 2011. A partir desta escrita, nenhum banco de dados
                 relacional atende à plena conformidade com este padrão.
             </p> -->
-            <p> As principais vantagens do PostgreSQL são: </p>
+            <p class="text-justify"> As principais vantagens do PostgreSQL são: </p>
                 <b> <p> o Performance bastante admirável. </p> 
                 <p> o Multi-plataforma. </p> 
                 <p> o Altamente escalável. </p> 
                 <p> o Suporte a JSON e NOSQL </p> 
                 <p> o Comunidade ativa. </p> </b>
 
-            <p>Além de ser bastante avançado, suportando a maioria das características esperadas em um SGBD moderno:</p>
+            <p class="text-justify">Além de ser bastante avançado, suportando a maioria das características esperadas em um SGBD moderno:</p>
 
-            <p> <b> Stored Procedures: </b> o programador pode realizar um grande número de operações dentro do
+            <p class="text-justify"> <b> Stored Procedures: </b> o programador pode realizar um grande número de operações dentro do
             próprio banco, aumentando o desempenho geral da aplicação. </p>
 
-            <p> <b> Altamente Extensível: </b> 
+            <p class="text-justify"> <b> Altamente Extensível: </b> 
             possibilidade de se utilizar operadores, tipos de dados, estruturas e métodos de acesso definidos pelo
             usuário (o programador do sistema). </p>
 
-            <p> <b> Banco de Dados "Relacional a Objetos": </b> possui algumas características de orientação a
+            <p class="text-justify"> <b> Banco de Dados "Relacional a Objetos": </b> possui algumas características de orientação a
             objetos, como herança, por exemplo. </p>
 
-            <p> <b> Características de Bancos Relacionais: </b> quase todas as características esperadas em um banco de dados
+            <p class="text-justify"> <b> Características de Bancos Relacionais: </b> quase todas as características esperadas em um banco de dados
             relacional são encontradas no PostgreSQL, como consultas declarativas em SQL, otimizações de consultas,
             controle de concorrência, transações e multiusuário. </p>
 
-            <p> <b> Integridade Referencial: </b> é uma característica da última versão do PostgreSQL. O banco de dados agora
+            <p class="text-justify"> <b> Integridade Referencial: </b> é uma característica da última versão do PostgreSQL. O banco de dados agora
             suporta a integridade referencial de dados. Serve para proteger dados de uma tabela sendo usada por outra. </p>
 
-            <p> <b> Instalação Simples e Rápida: </b> a instalação é muito simples, intuitiva e rápida. </p>
+            <p class="text-justify"> <b> Instalação Simples e Rápida: </b> a instalação é muito simples, intuitiva e rápida. </p>
 
 
             <!-- <p> • Tipos de dados
@@ -262,7 +257,7 @@
         <!-- preço -->
         <div class="container-fluid text-justify" id="preco">
             <h2 class="title"> <b> Preço </b> </h2>
-            <p> É gratuito e opensource. É disponível para que qualquer pessoa redistruibuir e modificar. </p>
+            <p class="text-justify"> É gratuito e opensource. É disponível para que qualquer pessoa redistruibuir e modificar. </p>
         </div>
 
         <!-- quem usa -->
@@ -361,11 +356,11 @@
         <!-- Curiosidades -->
         <div class="container-fluid text-justify" id="curiosidade">
             <h2 class="title"> <b> Curiosidades </b> </h2>
-            <p>
-                 O postgreSQL não tem limite de tamanho para seus banco de dados, sendo a única limitação para
+            <p class="text-justify">
+                O postgreSQL não tem limite de tamanho para seus banco de dados, sendo a única limitação para
                 o hardware disponível pelo computador em que o PostgreSQL está armazenando as suas informações.
             </p>
-            <p> Sua limitação dá-se em nível de tabela, com um limite máximo de 32TB por tabela. Além do mais, é
+            <p class="text-justify"> Sua limitação dá-se em nível de tabela, com um limite máximo de 32TB por tabela. Além do mais, é
                 possível ter registros(linhas) com até 1.6TB. A estabilidade também é um de seus recursos mais
                 interessantes,
                 pois foi projetado para executar no método 24/7 (24 horas por dia, sete dias na semana).
