@@ -20,3 +20,5 @@ A licença BSD possui inumeras restrições a menos que as impostas pela licenç
 Curiosidades 
 O postgreSQl não tem limite de tamanho para seus banco de dados, sendo a única limitação para tal critério o hardware disponivel pelo computador em que o PostgreSQL está armazenando as suas informações. Sua limitação dá-se em nível de tabela, com um limite máximo de 32TB por tabela. Além do mais, é possível ter registros(linhas) com até 1.6TB, campos com até 1GB, tabelas com até 1600 campos e indices ilimitados para aceleração da busca dos resultados.
 A estabilidade também é um de seus recursos mais interessantes, pois foi projetado para executar no método 24/7(24 horas por dia, sete dias na semana)
+
+https://enlyft.com/tech/products/postgresql
